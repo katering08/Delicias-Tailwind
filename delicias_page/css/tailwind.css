@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+:root{
+    --main-color: #dc2626;
+    --main-color-2:#b91c1c;
+    --second-color: #fcd34d;
+    --second-color-2:#fbbf24;
+    --text-color-dark:#000;
+    --text--color-light:#fff;
+}
+main{
+    padding-top: 82px;
+}
+.navlink{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    @apply px-4 py-2 mt-2 text-sm font-semibold text-center md:mt-0 md:ml-4 hover:text-white focus:outline-none focus:ring;
+}
+.navlink:hover{
+    color: var(--main-color);
+    background-size: 100% 3px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.navactive{
+    color: var(--main-color);
+    background-size: 100% 3px;
+}
+.submenuboton{
+    @apply flex flex-row justify-center text-gray-900 bg-red-200 items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-red-100 focus:bg-red-100 focus:outline-none focus:ring;
+}
+.submenulink{
+    @apply flex flex-row items-start rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-red-200 focus:bg-red-200 focus:outline-none focus:ring;
+}
+.submenulinkicono{
+    @apply bg-red-600 text-white rounded-lg p-3;
+}
+/*--------------- MISION Y VISION --------------------------*/
+.mvcard{
+    @apply mx-auto p-5 sm:p-10 text-center text-white;
+}
+.mvcardcont{
+    @apply h-full py-16 max-w-sm rounded overflow-hidden shadow-lg  bg-yellow-500;
+}
+.mvcardtitle{
+    @apply font-bold text-xl mb-2;
+}
+.mvcardtext{
+    @apply text-base;
+}
+/*--------- DESC. INICIAL, CHICHARRONES, COMENTARIOS-----------*/
+.contenedortotal1{
+    @apply  text-center py-16 bg-red-800 text-white;
+}
+.tituloh1{
+    @apply text-4xl font-bold leading-tight mb-5;
+}
+.contenedorimg{
+    @apply lg:w-5/12;
+}
+.contenedorinfo{
+    @apply lg:flex justify-between items-center;
+}
+.subcontenedorinfo{
+    @apply lg:w-6/12 lg:p-0 p-7;
+}
+.imagen{
+    transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+}
+.contenedortotal2{
+    @apply  text-center py-16  bg-white text-red-800;
+}
+.botonesinfo{
+    @apply text-white rounded-full border-transparent shadow-md py-2 px-5 text-base bg-yellow-500 hover:bg-white hover:text-yellow-500 inline-block border;
+}
+.parrafoinfo{
+    @apply text-sm text-gray-600 text-center px-5;
+}
+/*-------------- SERVICIOS Y MAPA -----------------------*/
+.card {
+    @apply w-full h-full text-center items-center p-4 transform  hover:scale-105 transition duration-300;
+}
+.icono{
+    @apply  w-28 h-28 box-border border-4 inline-block mb-4 p-4 rounded-xl transform rotate-45 border-yellow-500 ;
+}
+.material-icons{
+    @apply text-red-700 transform -rotate-45;
+}
+.infoservices{
+    @apply px-10 py-6 mb-10 text-center;
+}
+.subtitulo{
+    @apply font-bold text-xl mb-4;
+}
+.parrafo{
+    @apply text-base;
+}
+.content-whatsapp{
+    @apply block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110;
+}
+.icono-whatsapp{
+    color: #28a745;
+    @apply object-cover bg-white object-center w-full h-full rounded-full;
+}
+.icono-whatsapp:hover{
+    color:white;
+    background-color: #28a745;
+}
+/*---- SERVICIOS ----*/
+.serviciocontenedor{
+  @apply grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 bg-white;
+}
+.servicioimagenes{
+    @apply grid grid-cols-1 md:grid-cols-2 m-3 md:m-10 gap-7 p-3 md:p-8;
+}
+.servicioimagenes div{
+    @apply w-full;
+}
+.servicioimagenes div img{
+    @apply w-64 h-auto mx-auto;
+}
+.serviciodescrip{
+    @apply text-center rounded-2xl px-10 mx-0 md:mx-10 my-10;
+}
+.serviciodescrip svg{
+    @apply inline-block h-24 w-24 text-red-600;
+}
+.serviciodescrip div div div h2{
+    @apply font-bold text-3xl mb-2;
+}
+.serviciodescrip div div p{
+    @apply text-lg;
+}
+/*-------- PRODUCTOS ---------------*/
+.product-content-title{
+    @apply pt-20 pb-10 text-center;
+}
+.product-title{
+    @apply text-2xl underline font-semibold md:text-4xl text-yellow-500;
+}
+.product-content-card{
+    @apply bg-white lg:py-12 lg:flex lg:justify-center;
+}
+.product-card{
+    @apply bg-white w-full lg:mx-8 lg:flex lg:rounded-lg;
+}
+.product-card-img{
+    @apply h-64 bg-contain bg-no-repeat bg-center lg:h-full;
+}
+.product-card-info{
+    @apply py-12 px-6 w-full lg:w-1/2 mx-auto;  
+}
+.product-card-h2{
+    @apply text-3xl text-gray-800 font-bold;
+}
+.product-card-p{
+    @apply mt-4 text-gray-600;
+}
+.product-card-btn{
+    @apply bg-red-800 text-gray-100 px-5 py-3 font-semibold rounded;
+}
+/*---------- COMENTARIOS ----------*/
+.contenedorcomentarios{
+    @apply  bg-red-800 w-full m-0 justify-center flex flex-col md:flex-row shadow-sm overflow-hidden;
+}
+.comentariototal{
+    max-width: 500px;
+    @apply w-full mx-auto my-5 rounded-lg bg-white shadow-lg pt-5 pb-10 text-gray-800;
+}
+.contenedorboton{
+    @apply flex my-4 justify-center items-center;
+}
+
+.botoncomentario1{
+    @apply text-center font-bold  inline-block rounded-full mx-2 focus:outline-none focus:ring;
+}
+.subbotoncomentario{
+    @apply h-12 w-12 opacity-25 bg-yellow-300 text-black;
+}
+.subbotoncomentario2{
+    @apply h-16 w-16 opacity-100 bg-yellow-400 text-red-800;
+}
+.p{
+    @apply text-red-800 font-normal italic px-6 py-6 text-sm ;
+}
+.contenedoruser{
+    @apply flex justify-center px-6 pt-2 pb-6 ;
+}
+.h2{
+    @apply text-sm md:text-sm font-bold text-red-800 leading-tight;
+}
+.user{
+    @apply text-red-800 text-xs md:text-sm truncate;
+   
+}
+/*------- FOOTER ------------*/
+.submenuitem{
+    @apply w-60 h-60 mx-auto my-3 rounded-sm overflow-hidden relative transform hover:scale-105 transition-all duration-700 box-border;
+}
+.submenuitem a img{
+    @apply w-full h-full object-cover object-center absolute z-0;
+}
+
+.footer{
+    @apply bg-gray-100 pt-10 sm:mt-10 border-t border-red-600;
+}
+.footer2{
+    @apply max-w-6xl m-auto text-gray-800 flex flex-wrap;
+}
+.linksfooter{
+    @apply my-3 block text-gray-700 hover:text-red-700 text-sm font-medium duration-700 overflow-hidden;
+}
+.iconfooter{
+    @apply w-6 mx-1;
+}
+.sv{
+    @apply h-6 w-6 text-red-500 hover:text-yellow-500;
+}
+@tailwind utilities;
